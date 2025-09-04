@@ -1,0 +1,34 @@
+{
+  "name": "movie-api-node",
+  "version": "1.0.0",
+  "description": "Basic Movie Management API with CRUD, validation, Swagger/OpenAPI, and unit tests (Handler/Service/DAO).",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --runInBand"
+  },
+  "keywords": [
+    "express",
+    "swagger",
+    "openapi",
+    "jest",
+    "supertest",
+    "movies",
+    "crud"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "joi": "^17.10.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4",
+    "supertest": "^7.0.0"
+  }
+}
