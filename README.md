@@ -2,22 +2,23 @@
 
 A basic CRUD API with **Handler/Service/DAO** layers, **Joi** validation, **Swagger/OpenAPI 3.0** docs, and **Jest + Supertest** unit tests.
 
-## Quick Start
+## Quick Start from docker
 
 ```bash
-# 1) Install
-npm install
+# 1) Docker Build
+docker build -t movie-api-node .
 
-# 2) Run
-npm start
+# 2) Run container
+docker run -d --name movie-api -p 3000:3000 movie-api-node
+
 # -> http://localhost:3000
 # -> Swagger docs: http://localhost:3000/docs
 
-# 3) Dev with hot reload
-npm run dev
+# 3) Stop 
+docker stop [Container ID]
 
 # 4) Test
-npm test
+docker rm [Container ID]
 ```
 
 ## Endpoints
