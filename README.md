@@ -14,10 +14,10 @@ docker run -d --name movie-api -p 3000:3000 movie-api-node
 # -> http://localhost:3000
 # -> Swagger docs: http://localhost:3000/docs
 
-# 3) Stop 
+# 3) Stop container
 docker stop [Container ID]
 
-# 4) Test
+# 4) Remove container
 docker rm [Container ID]
 ```
 
